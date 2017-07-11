@@ -93,7 +93,7 @@ public void testReplaceItem() throws Exception {
 		testList.add("6");
 		testList.add("6");
 		testList.add("6");
-		("666",  LearningArrayLists.addAllString(testList));
+		assertEquals("666",  LearningArrayLists.addAllString(testList));
 	}
 	
 	/* now do this puzzle: http://apcomputersciencetutoring.com/exam-review/candidatepool-free-response-practice-question/ */
