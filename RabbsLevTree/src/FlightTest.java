@@ -48,10 +48,36 @@ public class FlightTest {
 				Time arrivalTime = flights.get(i).getArrivalTime();
 				Time departureTime = flights.get(i).getDepartureTime();
 				duration += arrivalTime.minutesUntil(departureTime);
+
 			}
 			return duration;
 		}
 
+		public int getShortestLayover() {
+			Time arrivalTime;
+			Time departureTime;
+			int duration[] = new int[flights.size() - 1];
+			if (flights.size() > 2) {
+				for (int i = 0; i < flights.size(); i++) {
+					if (i + 1 < flights.size()) {
+						arrivalTime = flights.get(i).getArrivalTime();
+						departureTime = flights.get(i + 1).getDepartureTime();
+						duration[i] = arrivalTime.minutesUntil(departureTime);
+					}
+				}
+				int smallestDuration = duration[0];
+				System.out.println(smallestDuration);
+				for (int i = 1; i < duration.length; i++) {
+					if (duration[i] < smallestDuration) {
+						smallestDuration = duration[i];
+					}
+				}
+				return smallestDuration;
+			} else {
+				return -1;
+			}
+
+		}
 	}
 
 	/* This test is rigged. */
