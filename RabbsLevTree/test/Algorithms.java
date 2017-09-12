@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Algorithms {
@@ -46,5 +47,22 @@ public class Algorithms {
 			}
 		}
 		return false;
+	}
+	
+	public static List<Double> sortScores(List<Double> inputList){
+		for (int i = 0; i < inputList.size(); i++) {
+			double doobel = inputList.get(i);
+			for (int j = i; j < inputList.size(); j++) {
+				if(doobel > inputList.get(j)) {
+					doobel=inputList.get(j);
+				}
+			}
+			int k = inputList.indexOf(doobel);
+			double temp = inputList.get(i);
+			inputList.set(i, doobel);
+			inputList.set(k, temp);
+				System.out.println(inputList);
+		}
+		return inputList;
 	}
 }

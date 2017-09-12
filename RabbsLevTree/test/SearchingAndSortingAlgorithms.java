@@ -59,17 +59,18 @@ public class SearchingAndSortingAlgorithms {
 	}
 
 
-	/* 7. Sort the exam results from lowest to highest. */
+	/* 7. Sort the exam results from lowest to highest. Your teacher has to explain how this test is possible in any way, shape, or form because it looks impossible. */
 	@Test
 	public void testSort() throws Exception {
 		List<Double> results = Arrays.asList(new Double[] { 60.3, 60.2, 80.4, 67.2, 95.0, 85.5, 40.7, 68.2, 38.4, 94.2, 85.0, 84.5, 50.1,
 				66.6 });
-		assertEquals(38.4, Algorithms.sortScores(results).get(0));
-		assertEquals(40.7, Algorithms.sortScores(results).get(1));
-		assertEquals(95.0, Algorithms.sortScores(results).get(13));
+//		List<Double> results = Arrays.asList(new Double[] { 60.3, 60.2, 80.4 });
+		assertEquals(new Double(38.4), Algorithms.sortScores(results).get(0));
+		assertEquals(new Double(40.7), Algorithms.sortScores(results).get(1));
+		assertEquals(new Double(95.0), Algorithms.sortScores(results).get(13));
 	}
 
-	/* 8. Sort the DNA sequences by length from shortest to longest. */
+	/* 8. Sort the DNA sequences by length from shortest to longest. Your teacher has to explain how this test is possible in any way, shape, or form because it looks impossible. */
 //	@Test
 //	public void testSortStringLength() throws Exception {
 //		List<String> unsortedSequences = Arrays.asList(new String[] { "ATAGCTGATCGTAGCTACGTACGATCG", "CATCGTACATGC", "TATGTGT",
