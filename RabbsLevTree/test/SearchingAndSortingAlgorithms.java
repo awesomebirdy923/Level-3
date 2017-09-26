@@ -97,15 +97,19 @@ public class SearchingAndSortingAlgorithms {
 	 * 9. Sort the words in alphabetical order. Your teacher may need to explain
 	 * compareTo.
 	 */
-	// @Test
-	// public void testSortStringContents() throws Exception {
-	// List<String> words = Arrays.asList(new String[] { "aby", "dap", "alt",
-	// "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
-	// "bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag",
-	// "ait", "dal", "daw" });
-	// assertEquals("aby", Algorithms.sortWords(words).get(0));
-	// assertEquals("bar", Algorithms.sortWords(words).get(10));
-	// assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
-	// }
-
+	@Test
+	public void testSortStringContents() throws Exception {
+		List<String> words = Arrays
+				.asList(new String[] { "aby", "dap", "alt", "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
+						"bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
+		// List<String> words = Arrays.asList(new String[] { "acc", "bca", "bac"
+		// });
+		assertEquals("aby", Algorithms.sortWords(words).get(0));
+		assertEquals("bar", Algorithms.sortWords(words).get(10));
+		assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
+		// assertEquals("acc", Algorithms.sortWords(words).get(0));
+		// assertEquals("bac", Algorithms.sortWords(words).get(1));
+		// assertEquals("bca", Algorithms.sortWords(words).get(words.size() -
+		// 1));
+	}
 }

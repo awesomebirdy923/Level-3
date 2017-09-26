@@ -7,6 +7,7 @@
 /CookieOrderTest$CookieOrder.class
 /CookieOrderTest$MasterOrder.class
 /CookieOrderTest.class
+/DNAComparator.class
 /DatingPool.class
 /FIBBBBBBBBBBBB.class
 /Flight.class
@@ -18,5 +19,5 @@
 /SearchingAndSortingAlgorithms.class
 /Time.class
 /com/
-/Algorithms$DNAComparator.class
-/DNAComparator.class
+/AsciiComparator.class
+/NameReverser.class

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.TreeMap;
@@ -83,6 +84,12 @@ public class Algorithms {
 		return new ArrayList(newOrder.keySet());
 	}
 
+	public static List<String> sortWords(List<String> order) {
+		AsciiComparator comparator = new AsciiComparator(order);
+		Collections.sort(order);
+		return order;
+	}
+
 }
 
 class DNAComparator implements Comparator<String> {
@@ -97,6 +104,22 @@ class DNAComparator implements Comparator<String> {
 	public int compare(String o1, String o2) {
 		// TODO Auto-generated method stub
 		return map.get(o1).compareTo(map.get(o2));
+	}
+
+}
+
+class AsciiComparator implements Comparator<String> {
+
+	List<String> list;
+
+	public AsciiComparator(List<String> list) {
+		this.list = list;
+	}
+
+	@Override
+	public int compare(String o1, String o2) {
+		// TODO Auto-generated method stub
+		return o1.compareTo(o2);
 	}
 
 }
