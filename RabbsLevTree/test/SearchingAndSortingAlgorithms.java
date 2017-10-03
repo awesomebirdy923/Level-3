@@ -104,9 +104,9 @@ public class SearchingAndSortingAlgorithms {
 						"bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
 		// List<String> words = Arrays.asList(new String[] { "acc", "bca", "bac"
 		// });
-		assertEquals("aby", Algorithms.sortWords(words).get(0));
-		assertEquals("bar", Algorithms.sortWords(words).get(10));
-		assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
+		assertEquals("aby", Algorithms.sort(words).get(0));
+		assertEquals("bar", Algorithms.sort(words).get(10));
+		assertEquals("daw", Algorithms.sort(words).get(words.size() - 1));
 		// assertEquals("acc", Algorithms.sortWords(words).get(0));
 		// assertEquals("bac", Algorithms.sortWords(words).get(1));
 		// assertEquals("bca", Algorithms.sortWords(words).get(words.size() -

@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Stack;
 
 import javax.swing.JOptionPane;
@@ -18,6 +19,11 @@ public class NameReverser {
 			j++;
 		}
 		// System.out.println(outputList);
-		JOptionPane.showMessageDialog(null, "This is your name backwards: " + Arrays.toString(outputList));
+		String nameBackwards = "";
+		for(Character e: outputList) {
+			nameBackwards = nameBackwards.concat(e.toString());
+		}
+		
+		JOptionPane.showMessageDialog(null, "This is your name backwards: " + nameBackwards);
 	}
 }

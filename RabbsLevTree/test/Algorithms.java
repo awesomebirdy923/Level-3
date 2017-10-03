@@ -66,7 +66,7 @@ public class Algorithms {
 			double temp = inputList.get(i);
 			inputList.set(i, doobel);
 			inputList.set(k, temp);
-			System.out.println(inputList);
+//			System.out.println(inputList);
 		}
 		return inputList;
 	}
@@ -87,6 +87,23 @@ public class Algorithms {
 	public static List<String> sortWords(List<String> order) {
 		AsciiComparator comparator = new AsciiComparator(order);
 		Collections.sort(order);
+		return order;
+	}
+	
+	public static List<String> sort(List<String> order){
+		for (int i = 0; i < order.size(); i++) {
+			String string = order.get(i);
+			for (int j = i; j < order.size(); j++) {
+				if(string.compareTo(order.get(j)) > 0) {
+					string = order.get(j);
+				}
+			}
+			int k = order.indexOf(string);
+			String temp = order.get(i);
+			order.set(i, string);
+			order.set(k, temp);
+			System.out.println(order);
+		}
 		return order;
 	}
 

@@ -1,6 +1,7 @@
 /.DS_Store
 /Algorithms.class
 /ArrayListQuiz.class
+/AsciiComparator.class
 /Beatle.class
 /Chip.class
 /ConcatThing.class
@@ -16,8 +17,7 @@
 /Iterating.class
 /LearningArrayLists.class
 /LongChipCompetition.class
+/NameReverser.class
 /SearchingAndSortingAlgorithms.class
 /Time.class
 /com/
-/AsciiComparator.class
-/NameReverser.class
